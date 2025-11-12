@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Studio - Trang Chủ</title>
+    <!-- Tải Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tải font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Áp dụng font Inter làm font chữ mặc định */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Màu nền xám đậm (gray-900) */
+            color: #F9FAFB; /* Màu chữ xám nhạt (gray-50) */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <nav class="bg-gray-800/80 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo/Tên Studio -->
+            <a href="#" class="text-2xl font-bold text-white hover:text-indigo-400 transition duration-300">
+                PixelStorm Games
+            </a>
+            <!-- Menu điều hướng -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-300 hover:text-indigo-400 transition duration-300">Trang chủ</a>
+                <a href="#games" class="text-gray-300 hover:text-indigo-400 transition duration-300">Trò chơi</a>
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition duration-300">Giới thiệu</a>
+            </div>
+            <!-- Nút mobile menu (tùy chọn) -->
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Trang chủ) -->
+    <header id="home" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <!-- Lớp phủ màu tối -->
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <!-- Hình nền (thay bằng hình ảnh game của bạn) -->
+        <img 
+            src="https://placehold.co/1920x1080/1a202c/3a3f4b?text=Anh+Nen+Game+Cuc+Ngau" 
+            alt="Hero Background" 
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+        <!-- Nội dung Hero -->
+        <div class="relative z-20 container mx-auto px-6 py-24">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">
+                Khám Phá Thế Giới Phiêu Lưu Mới
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto drop-shadow-md">
+                Trải nghiệm những tựa game hấp dẫn với cốt truyện lôi cuốn và đồ họa đỉnh cao từ studio của chúng tôi.
+            </p>
+            <a href="#games" 
+               class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-xl">
+                Xem Các Trò Chơi
+            </a>
+        </div>
+    </header>
+
+    <!-- Game Showcase Section (Trò chơi) -->
+    <section id="games" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+                Những Trò Chơi Nổi Bật
+            </h2>
+            
+            <!-- Grid chứa các game -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Game Card 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="relative h-56 w-full">
+                        <img src="https://placehold.co/600x400/1f2937/4f46e5?text=Game+1" alt="Hình ảnh game 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Cybernetic Dawn</h3>
+                        <p class="text-gray-400 mb-4">
+                            Một tựa game hành động RPG trong thế giới cyberpunk tương lai. Nâng cấp cơ thể và chiến đấu vì tự do.
+                        </p>
+                        <a href="#" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="relative h-56 w-full">
+                        <img src="https://placehold.co/600x400/1f2937/d946ef?text=Game+2" alt="Hình ảnh game 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">The Lost Kingdom</h3>
+                        <p class="text-gray-400 mb-4">
+                            Giải các câu đố cổ xưa và khám phá tàn tích của một vương quốc bị lãng quên trong tựa game phiêu lưu giải đố này.
+                        </p>
+                        <a href="#" class="inline-block bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden group transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="relative h-56 w-full">
+                        <img src="https://placehold.co/600x400/1f2937/10b981?text=Game+3" alt="Hình ảnh game 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Void Racers</h3>
+                        <p class="text-gray-400 mb-4">
+                            Đua xe không trọng lực qua các thiên hà với tốc độ chóng mặt. Chơi đơn hoặc thách đấu bạn bè.
+                        </p>
+                        <a href="#" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Giới thiệu) -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Về Chúng Tôi</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Chúng tôi là [Tên Studio Của Bạn], một nhóm các nhà phát triển độc lập đam mê tạo ra những trải nghiệm chơi game độc đáo và đáng nhớ. Sứ mệnh của chúng tôi là mang lại niềm vui, sự thử thách và những câu chuyện tuyệt vời cho người chơi trên toàn thế giới.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-10">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 [Tên Studio Của Bạn]. Đã đăng ký Bản quyền.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-indigo-400">Twitter</a>
+                <a href="#" class="hover:text-indigo-400">Facebook</a>
+                <a href="#" class="hover:text-indigo-400">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
